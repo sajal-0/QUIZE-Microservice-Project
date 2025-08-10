@@ -58,3 +58,9 @@ When a user submits a quiz:
 ---
 
 ## 📁 Project Structure
+QUIZE-Microservice-Project/
+│
+├── EurekaServer/ # Eureka Service Registry
+├── quize-API-gateway/ # API Gateway Service
+├── question-service1/ # Question Service
+└── quiz-service1/ # Quiz Service
