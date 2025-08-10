@@ -58,9 +58,54 @@ When a user submits a quiz:
 ---
 
 ## 📁 Project Structure
+```text
 QUIZE-Microservice-Project/
 │
-├── EurekaServer/ # Eureka Service Registry
-├── quize-API-gateway/ # API Gateway Service
-├── question-service1/ # Question Service
-└── quiz-service1/ # Quiz Service
+├── EurekaServer/          # Eureka Service Registry
+├── quize-API-gateway/     # API Gateway Service
+├── question-service1/     # Question Service
+└── quiz-service1/         # Quiz Service
+```
+
+---
+
+## 🚀 How to Run
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/sajal-0/QUIZE-Microservice-Project.git
+   cd QUIZE-Microservice-Project
+
+2. **Start Eureka Server**
+   ```bash
+   cd EurekaServer
+   mvn spring-boot:run
+
+3. **Start Question Service**
+   ```bash
+   cd question-service1
+   mvn spring-boot:run
+4. **Start Quiz Service**
+   ```bash
+   cd quiz-service1
+   mvn spring-boot:run
+5. **Start API Gateway**
+   ```bash
+   cd quize-API-gateway
+   mvn spring-boot:run
+6. **Access Eureka Dashboard**
+   ```bash
+   http://localhost:8761
+
+##📌 Example APIs
+- **Get All Questions**
+  ```bash
+  GET /question-service1/questions
+- **Create Quiz**
+   ```bash
+   POST /quiz-service1/quiz
+- **Submit answer and getScore
+  ```bash
+  POST /quiz-service1/quiz/submit
+
+o include that in the README too?
+
